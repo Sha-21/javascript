@@ -8,21 +8,40 @@ let premierNombre = read.questionInt("Premier nombre : ");
 let operande = read.question("operande : ");
 let deuxiemeNombre = read.questionInt("Deuxieme nombre : ");
 
+function addition(nombre1, nombre2){
+    return nombre1+nombre2;
+}
+function soustraction(nombre1, nombre2){
+    return nombre1-nombre2;
+}
+function multiplication(nombre1, nombre2){
+    return nombre1*nombre2;
+}
+function division(nombre1, nombre2){
+    if(nombre2 == 0)
+    {
+        console.log("ERREUR_DIVIDE_BY_ZERO")
+    }
+    else
+    {
+        return nombre1/nombre2;
+    }
+}
 if(operande === "/")
 {
-    console.log(premierNombre/deuxiemeNombre);
+    console.log(division(premierNombre, deuxiemeNombre));
 }
 else if(operande === "*" || operande === "x" || operande === "X")
 {
-    console.log(premierNombre*deuxiemeNombre);
+    console.log(multiplication(premierNombre, deuxiemeNombre));
 }
 else if(operande === "+")
 {
-    console.log(premierNombre+deuxiemeNombre);
+    console.log(addition(premierNombre, deuxiemeNombre));
 }
 else if(operande === "-")
 {
-    console.log(premierNombre-deuxiemeNombre);
+    console.log(soustraction(premierNombre, deuxiemeNombre));
 }
 else
 {

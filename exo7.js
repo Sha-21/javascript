@@ -7,6 +7,7 @@ let read = require("readline-sync");
 
 let nNombre = read.questionInt("Veuillez introduire un nombre entier positif : ");
 let sum = 0;
+
 for(let i=1; i<=nNombre;i++)
 {
     sum+=i;
